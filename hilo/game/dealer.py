@@ -30,6 +30,7 @@ class Dealer:
         while self.keep_playing:
             self.get_inputs()
             self.do_updates()
+            self.can_draw()
             self.do_outputs()
 
     def get_inputs(self):
@@ -50,6 +51,18 @@ class Dealer:
         """
         points = self.player.get_points()
         self.score += points
+
+    def can_draw(self):
+        """Checks if score is 0 or below or if all cards have been used.
+        This method will set the keep_playing attribute to false, Ending the loop
+
+        Args:
+            self (Dealer): An instance of Dealer."""
+        if self.score <= 0:
+            self.keep_playing = False
+        
+        if len(self.player.cards) == 0:
+            self.keep_playing = False
         
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 
