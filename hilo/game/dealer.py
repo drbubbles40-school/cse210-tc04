@@ -64,8 +64,6 @@ class Dealer:
         if len(self.player.cards) == 0:
             self.keep_playing = False
         
-
-        
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 
         this case, that means the dice that were rolled and the score.
