@@ -38,9 +38,8 @@ class Dealer:
 
         Args:
             self (Dealer): An instance of Dealer.
-            player (Player): An instance of player.
         """
-        self.player.throw_dice()
+        self.card
         
     def do_updates(self):
         """Updates the important game information for each round of play. In 
@@ -59,7 +58,7 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer.
         """
-        print(f"\nThe card is: {self.player.dice}")
+        print(f"\nThe card is: {self.card}")
         print(f"Your score is: {self.score}")
         if self.player.can_throw():
             choice = input("Keep Playing? [y/n] ")
