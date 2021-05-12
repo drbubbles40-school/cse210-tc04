@@ -15,5 +15,5 @@ class Player:
         """
         
         self.cards = []
-        self.draw_card = 0
-        self.get_points = 0
+        for i in range (1, 14):
+            self.cards.append(i)
