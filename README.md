@@ -9,6 +9,7 @@ game is ended for you!
 ## Getting Started
 
 ---
+
 Make sure you have Python 3.8.0 or newer installed and running on your machine.
 Open a terminal and browse to the project's root folder. Start the program by
 running the following command.
@@ -22,24 +23,26 @@ click the "run" icon.
 ## Project Structure
 
 ---
+
 The project files and folders are organized as follows:
 
-root                    (project root folder)
-+-- hilo                (source code for game)
-  +-- game              (specific game classes)
-  +-- __init__.py       (python package file)
-  +-- __main__.py       (entry point for program)
-+-- README.md           (general info)
+root (project root folder)
++-- hilo (source code for game)
++-- game (specific game classes)
++-- **init**.py (python package file)
++-- **main**.py (entry point for program)
++-- README.md (general info)
 
 ## Required Technologies
 
 ---
 
-* Python 3.8.0
+- Python 3.8.0
 
 ## Authors
 
 ---
 
-* TODO: Add your names and emails here
-Nathaniel Jackson - jac20003@byui.edu
+- TODO: Add your names and emails here
+  Nathaniel Jackson - jac20003@byui.edu
+  Chase Patterson - pat20001@byui.edu
