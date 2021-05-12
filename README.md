@@ -42,3 +42,4 @@ root                    (project root folder)
 ---
 
 * TODO: Add your names and emails here
+Nathaniel Jackson - jac20003@byui.edu
