@@ -48,4 +48,8 @@ root                    (project root folder)
 ---
 
 - TODO: Add your names and emails here
+  Nathaniel Jackson
+  TJ Anderson
+  Kyle Ames
+  Lucas Gargallo
   Chase Patterson (pat20001@byui.edu)
