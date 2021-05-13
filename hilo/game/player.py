@@ -48,9 +48,17 @@ class Player:
         if self.guess == 'h':
             if self.new_card > self.current_card:
                 return 100
+            elif self.new_card < self.current_card:
+                return -75
+            else:
+                return 0
         elif self.guess == 'l':
             if self.new_card < self.current_card:
+                return 100
+            elif self.new_card > self.current_card:
                 return -75
+            else:
+                return 0
         else:
             return ("Not valid guess!")
 
