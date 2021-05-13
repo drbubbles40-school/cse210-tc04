@@ -22,9 +22,9 @@ class Player:
 
         self.cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
         self.hilo = True
-        self.guess = 0
-        self.new_card
-        self.current_card
+        self.guess = 'a'
+        self.new_card = 0
+        self.current_card = 0
 
     def get_guess(self):
         """This method obtains the player's guess of higher or lower
