@@ -26,9 +26,15 @@ class Player:
         self.new_card
         self.current_card
 
-    def guess(self):
-        pass
-
+    def get_guess(self):
+        """This method obtains the player's guess of higher or lower
+        Args:
+            self (Player): an instance of Player.
+        """
+        self.guess = input("Will the next number be higher or lower? (Enter h or l) ")
+        while (self.guess.lower() not in ('h', 'l')):
+            self.guess = input("Will the next number be higher or lower? (Enter h or l) ")
+        
     def get_points(self):
         """Calculates the total number of points for the current round. Player starts off with 300 points. The Player gets 100 ponts if guessed correctly and loses 75 points if guessed incorrectly. If Player reaches 0 points the game is over. 
 
