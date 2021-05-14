@@ -40,7 +40,7 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer.
         """
-        card = self.player.draw_card()
+        self.player.draw_card()
         print(f"\nThe selected card is: {self.player.current_card}")
         self.player.get_guess()
     
