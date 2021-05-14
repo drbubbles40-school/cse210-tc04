@@ -59,10 +59,13 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer."""
         if self.score <= 0:
-            self.keep_playing = False
+            return False
         
         if len(self.player.cards) == 0:
-            self.keep_playing = False
+            return False
+        
+        else:
+            return True
         
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 
