@@ -8,8 +8,8 @@ class Player:
     Attributes:
         self.cards (list): List of cards the dealer will show.
         self.guess (string): The Player's guess if the next card is higher or lower.
-        self.new_card ():
-        self.current_card ():
+        self.new_card (): Stores the new card being revealed.
+        self.current_card (): Stores the last card shown.
 
     """
 
@@ -63,8 +63,8 @@ class Player:
             return ("Not valid guess!")
 
     def draw_card(self):
-        self.new_card = random.self.cards
-        self.cards.remove(new_card)
+        self.new_card = random.randint(1,13)
+        self.cards.remove(self.new_card)
         # I think this should go down here, I could be wrong lol
         # for i in range (1, 14):
         #    self.cards.append(i)

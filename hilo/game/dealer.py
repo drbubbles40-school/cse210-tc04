@@ -35,11 +35,12 @@ class Dealer:
 
     def get_inputs(self):
         """Gets the inputs at the beginning of each round of play. In this case,
-        that means revealing the card.
+        that means taking the guess.
 
         Args:
             self (Dealer): An instance of Dealer.
         """
+        
         self.card
         
     def do_updates(self):
