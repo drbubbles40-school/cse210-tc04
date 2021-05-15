@@ -35,17 +35,16 @@ class Dealer:
 
     def get_inputs(self):
         """Gets the inputs at the beginning of each round of play. In this case,
-        that means revealing the card.
+        that means taking the guess.
 
         Args:
             self (Dealer): An instance of Dealer.
         """
+
         self.player.draw_card()
         print(f"\nThe selected card is: {self.player.current_card}")
         self.player.get_guess()
-    
-
-       
+   
     def do_updates(self):
         """Updates the important game information for each round of play. In 
         this case, that means updating the score.
@@ -63,10 +62,13 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer."""
         if self.score <= 0:
-            self.keep_playing = False
+            return False
         
         if len(self.player.cards) == 0:
-            self.keep_playing = False
+            return False
+        
+        else:
+            return True
         
     def do_outputs(self):
         """Outputs the important game information for each round of play. In 

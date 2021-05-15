@@ -48,3 +48,4 @@ root (project root folder)
   Chase Patterson - pat20001@byui.edu
   Kyle Ames - ame18007@byui.edu
   Lucas Gargallo - gargallo@byui.edu
+  TJ Anderson - and15126@byui.edu
