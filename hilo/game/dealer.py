@@ -77,9 +77,9 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer.
         """
-        print(f"\nThe card is: {self.card}")
+        print(f"\nThe card is: {self.player.new_card}")
         print(f"Your score is: {self.score}")
-        if self.player.can_throw():
+        if self.can_draw():
             choice = input("Keep Playing? [y/n] ")
             self.keep_playing = (choice == "y")
         else:
