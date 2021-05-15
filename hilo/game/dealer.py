@@ -40,9 +40,11 @@ class Dealer:
         Args:
             self (Dealer): An instance of Dealer.
         """
-        
-        self.card
-        
+
+        self.player.draw_card()
+        print(f"\nThe selected card is: {self.player.current_card}")
+        self.player.get_guess()
+   
     def do_updates(self):
         """Updates the important game information for each round of play. In 
         this case, that means updating the score.
