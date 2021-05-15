@@ -63,8 +63,10 @@ class Player:
             return ("Not valid guess!")
 
     def draw_card(self):
-        self.new_card = random.randint(1,13)
+        self.current_card = self.new_card
+        self.new_card = random.choice(self.cards)
         self.cards.remove(self.new_card)
+        # The below comment was here before Kyle got back in...do we need this?
         # I think this should go down here, I could be wrong lol
         # for i in range (1, 14):
         #    self.cards.append(i)
